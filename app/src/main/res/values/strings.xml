@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">fblaApp</string>
+    <string name="app_name">FBLA of JCHS</string>
     <string name="home">Home</string>
     <string name="aboutUs">About Us</string>
     <string name="joinUs">Join Us</string>
@@ -7,4 +7,5 @@
     <string name="officers">Officers</string>
     <string name="currentEvent">Current Events</string>
     <string name="eventSignup">Sign Up for Current Event</string>
+    <string name="goldAccent">#FFD700</string>
 </resources>
