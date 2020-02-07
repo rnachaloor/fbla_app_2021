@@ -8,26 +8,20 @@
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/aboutUs"
-        android:icon="@drawable/ic_person_pin"
         android:title="@string/aboutUs"/>
     <item
         android:id="@+id/joinButton"
-        android:icon="@drawable/ic_person_add"
         android:title="@string/joinUs"/>
     <item
         android:id="@+id/officers"
-        android:icon="@drawable/ic_people"
         android:title="@string/officers"/>
     <item
         android:id="@+id/social"
-        android:icon="@drawable/ic_globe"
         android:title="@string/social"/>
     <item
         android:id="@+id/currentEvent"
-        android:icon="@drawable/ic_email"
         android:title="@string/currentEvent"/>
     <item
         android:id="@+id/eventSignup"
-        android:icon="@drawable/ic_clipboard"
         android:title="@string/eventSignup"/>
 </menu>

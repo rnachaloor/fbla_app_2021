@@ -9,6 +9,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static void test(){
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,33 +27,17 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        //handles which item you select
+        //handles what happens when an item is selected.
         switch (item.getItemId()) {
-            case R.id.home:
-                System.out.println("Filler Function");
-                return true;
             case R.id.aboutUs:
-                System.out.println("Fill Function");
-                return true;
-            case R.id.joinButton:
-                System.out.println("Filler Func");
-                return true;
-            case R.id.officers:
-                System.out.println("Fill Func");
-                return true;
-            case R.id.social:
-                System.out.println("Filler Text");
-                return true;
-            case R.id.currentEvent:
-                System.out.println("Fill Text");
-                return true;
-            case R.id.eventSignup:
-                System.out.println("Text Fill");
+                test();
                 return true;
             default:
-                System.out.println("Placeholder");
-                return true;
+                return super.onOptionsItemSelected(item);
         }
     }
+
+
+
 }
 
