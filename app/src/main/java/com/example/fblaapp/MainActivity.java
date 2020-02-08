@@ -31,6 +31,12 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    public boolean aboutUs(MenuItem item) {
+        Intent intent = new Intent(this, AboutUs.class);
+        startActivity(intent);
+        return true;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,18 +48,6 @@ public class MainActivity extends AppCompatActivity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main_menu, menu);
         return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        //handles what happens when an item is selected.
-        switch (item.getItemId()) {
-            case R.id.aboutUs:
-                test();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
     }
 
 

@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/app_icon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Officers"></activity>
+        <activity android:name=".AboutUs"></activity>
+        <activity android:name=".Officers" />
         <activity android:name=".SocialMediaLinks" />
         <activity android:name=".MainActivity">
             <intent-filter>

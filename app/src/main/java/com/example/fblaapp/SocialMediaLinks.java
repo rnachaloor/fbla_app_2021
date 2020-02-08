@@ -43,6 +43,12 @@ public class SocialMediaLinks extends AppCompatActivity {
         return true;
     }
 
+    public boolean aboutUs(MenuItem item) {
+        Intent intent = new Intent(this, AboutUs.class);
+        startActivity(intent);
+        return true;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
