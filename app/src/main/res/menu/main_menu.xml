@@ -4,7 +4,6 @@
     <item
         android:id="@+id/home"
         android:icon="@drawable/ic_home_black_24dp"
-        android:onClick="homePage"
         android:title="@string/home"
         android:onClick="homePage"
         app:showAsAction="ifRoom" />
@@ -16,7 +15,8 @@
         android:title="@string/joinUs"/>
     <item
         android:id="@+id/officers"
-        android:title="@string/officers"/>
+        android:title="@string/officers"
+        android:onClick="officerPage"/>
     <item
         android:id="@+id/social"
         android:onClick="socialMediaLinks"

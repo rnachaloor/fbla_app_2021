@@ -15,8 +15,24 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SocialMediaLinks extends AppCompatActivity {
 
+    private void urls(String url) {
+        Uri uri = Uri.parse(url);
+        Intent browser = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(browser);
+    }
+
+    public void twitter(View view) {
+        urls("https://twitter.com/jchsfbla?lang=en/");
+    }
+
     public boolean socialMediaLinks(MenuItem item) {
         Intent intent = new Intent(this, SocialMediaLinks.class);
+        startActivity(intent);
+        return true;
+    }
+
+    public boolean officerPage(MenuItem item) {
+        Intent intent = new Intent(this, Officers.class);
         startActivity(intent);
         return true;
     }
@@ -25,16 +41,6 @@ public class SocialMediaLinks extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         return true;
-    }
-
-    public void twitter(View view) {
-        goUrl("https://twitter.com/jchsfbla?lang=en/");
-    }
-
-    private void goUrl (String url) {
-        Uri uriUrl = Uri.parse(url);
-        Intent browser = new Intent(Intent.ACTION_VIEW, uriUrl);
-        startActivity(browser);
     }
 
     @Override
