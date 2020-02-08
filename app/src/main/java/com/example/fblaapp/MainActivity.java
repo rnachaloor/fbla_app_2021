@@ -10,9 +10,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static void test(){
-    }
-
     public boolean socialMediaLinks(MenuItem item) {
         Intent intent = new Intent(this, SocialMediaLinks.class);
         startActivity(intent);
@@ -38,17 +35,7 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        //handles what happens when an item is selected.
-        switch (item.getItemId()) {
-            case R.id.aboutUs:
-                test();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
+
 
 
 

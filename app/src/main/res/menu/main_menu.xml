@@ -4,6 +4,7 @@
     <item
         android:id="@+id/home"
         android:icon="@drawable/ic_home_black_24dp"
+        android:onClick="homePage"
         android:title="@string/home"
         app:showAsAction="ifRoom" />
     <item

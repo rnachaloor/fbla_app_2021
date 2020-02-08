@@ -1,17 +1,16 @@
 package com.example.fblaapp;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SocialMediaLinks extends AppCompatActivity {
-
-    private static void test(){
-    }
 
     public boolean socialMediaLinks(MenuItem item) {
         Intent intent = new Intent(this, SocialMediaLinks.class);
@@ -25,6 +24,16 @@ public class SocialMediaLinks extends AppCompatActivity {
         return true;
     }
 
+    public void twitter(View view) {
+        goUrl("https://twitter.com/jchsfbla?lang=en/");
+    }
+
+    private void goUrl (String url) {
+        Uri uriUrl = Uri.parse(url);
+        Intent browser = new Intent(Intent.ACTION_VIEW, uriUrl);
+        startActivity(browser);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,17 +45,5 @@ public class SocialMediaLinks extends AppCompatActivity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main_menu, menu);
         return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        //handles what happens when an item is selected.
-        switch (item.getItemId()) {
-            case R.id.aboutUs:
-                test();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
     }
 }
