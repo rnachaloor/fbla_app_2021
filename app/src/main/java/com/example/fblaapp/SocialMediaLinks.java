@@ -7,7 +7,9 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -39,14 +41,18 @@ public class SocialMediaLinks extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_social_media_links);
-        WebView twitterWeb = (WebView) findViewById(R.id.twitterWeb);
-        twitterWeb.loadUrl("https://twitter.com/jchsfbla?lang=en/");
+
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main_menu, menu);
+        WebView twitterView = (WebView) findViewById(R.id.twitterView);
+        WebSettings webSettings = twitterView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        twitterView.setWebViewClient(new WebViewClient());
+        twitterView.loadUrl("https://twitter.com/jchsfbla?lang=en/");
         return true;
     }
 }
