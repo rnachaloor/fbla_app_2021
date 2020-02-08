@@ -17,7 +17,8 @@
         android:title="@string/officers"/>
     <item
         android:id="@+id/social"
-        android:title="@string/social"/>
+        android:onClick="socialMediaLinks"
+        android:title="@string/social" />
     <item
         android:id="@+id/currentEvent"
         android:title="@string/currentEvent"/>
