@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -38,6 +39,8 @@ public class SocialMediaLinks extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_social_media_links);
+        WebView twitterWeb = (WebView) findViewById(R.id.twitterWeb);
+        twitterWeb.loadUrl("https://twitter.com/jchsfbla?lang=en/");
     }
 
     @Override
