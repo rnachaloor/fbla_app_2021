@@ -43,6 +43,18 @@ public class ViewAttendance extends AppCompatActivity {
         return true;
     }
 
+    public boolean currentEventsPage(MenuItem item) {
+        Intent intent = new Intent(this, CurrentEvents.class);
+        startActivity(intent);
+        return true;
+    }
+
+    public boolean joinFormPage(MenuItem item) {
+        Intent intent = new Intent(this, JoinForm.class);
+        startActivity(intent);
+        return true;
+    }
+
     public boolean freqentlyAskedQuestionsPage(MenuItem item) {
         Intent intent = new Intent(this, FrequentlyAskedQuestions.class);
         startActivity(intent);
