@@ -24,7 +24,7 @@ Date:02/8/2019
 
 The app folder contains the source code for the app
 
-## Terms and Services
+## Terms and Conditions
 
 The FBLA of JCHS app was written and is owned by Rohit Nachaloor, Siddharth Nachaloor, and Elliot Huang. FBLA of JCHS was distributed under the GPL version 3 license, which is an open-source license that allows anyone to download and run the app; modify the app; freely redistribute the app; and distribute modified versions of the app as long as the modified works are also distributed under the GPL license. FBLA of JCHS was written to present the judges at the Georgia State Leadership Conference at the Hyatt Regency in Atlanta, Georgia. Although unlikely, no form of harassment is allowed on the app, and the creators of this app are not responsible for any harassment that occurs on this app. The creators of the app are also not responsible for any inappropriate use of this app. 
 
