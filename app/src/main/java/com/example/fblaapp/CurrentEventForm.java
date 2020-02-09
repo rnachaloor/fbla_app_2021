@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -56,6 +57,11 @@ public class CurrentEventForm extends AppCompatActivity {
         Intent intent = new Intent(this, CurrentEventForm.class);
         startActivity(intent);
         return true;
+    }
+
+    public void eventFormSubmit(View view) {
+        Intent intent = new Intent(this, EventFormSubmitted.class);
+        startActivity(intent);
     }
 
     @Override
