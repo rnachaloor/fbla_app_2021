@@ -5,5 +5,123 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".JoinForm">
+    <TextView
+        android:id="@+id/newUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Name:"
+        android:textSize="28dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/newUserName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="120dp"
+        android:text="Graduating Class:"
+        android:textColor="@android:color/black"
+        android:textSize="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/newUserName4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="300dp"
+        android:text="Graduating Class:"
+        android:textColor="@android:color/black"
+        android:textSize="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/userNameBox"
+        android:layout_width="304dp"
+        android:layout_height="42dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/newUserName"
+        app:layout_constraintTop_toBottomOf="@+id/newUserName" />
+
+    <RadioGroup
+        android:layout_width="143dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintStart_toStartOf="@+id/newUserName2"
+        app:layout_constraintTop_toBottomOf="@+id/newUserName2">
+
+        <RadioButton
+            android:id="@+id/freshmenOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Freshmen" />
+
+        <RadioButton
+            android:id="@+id/sophomoreOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sophomore" />
+
+        <RadioButton
+            android:id="@+id/juniorOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Junior" />
+
+        <RadioButton
+            android:id="@+id/seniorOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Senior" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="143dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="192dp"
+        app:layout_constraintStart_toStartOf="@+id/newUserName2"
+        app:layout_constraintTop_toBottomOf="@+id/newUserName2">
+
+        <RadioButton
+            android:id="@+id/shirtSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Small" />
+
+        <RadioButton
+            android:id="@+id/shirtMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medium" />
+
+        <RadioButton
+            android:id="@+id/shirtLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Large" />
+
+        <RadioButton
+            android:id="@+id/shirtExtraLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Extra Large" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitJoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
