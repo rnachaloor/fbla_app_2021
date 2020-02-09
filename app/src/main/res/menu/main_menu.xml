@@ -30,6 +30,5 @@
         android:title="@string/eventSignup"/>
     <item
         android:id="@+id/attendence"
-        android:title="Attendence Data"
-        android:onClick="attendence"/>
+        android:title="Attendence Data"/>
 </menu>
