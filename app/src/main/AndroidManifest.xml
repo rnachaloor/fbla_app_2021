@@ -13,6 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".AboutUs" />
+        <activity android:name=".Attendance"/>
         <activity android:name=".Officers" />
         <activity android:name=".SocialMediaLinks" />
         <activity android:name=".MainActivity">

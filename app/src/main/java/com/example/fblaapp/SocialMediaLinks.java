@@ -49,8 +49,8 @@ public class SocialMediaLinks extends AppCompatActivity {
         return true;
     }
 
-    public boolean attendencePage(MenuItem item) {
-        Intent intent = new Intent(this, Attendence.class);
+    public boolean attendancePage(MenuItem item) {
+        Intent intent = new Intent(this, Attendance.class);
         startActivity(intent);
         return true;
     }
