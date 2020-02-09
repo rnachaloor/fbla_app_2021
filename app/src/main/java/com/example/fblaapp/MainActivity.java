@@ -37,10 +37,17 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    public boolean attendencePage(MenuItem item) {
+        Intent intent = new Intent(this, Attendence.class);
+        startActivity(intent);
+        return true;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getActionBar().setTitle(R.string.app_name);
     }
 
     @Override
