@@ -6,13 +6,100 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="15">
+
+            <ImageView
+                android:id="@+id/school"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:backgroundTint="#00000000"
+                android:scaleType="centerInside"
+                android:src="@drawable/school">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Johns Creek High School FBLA"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="award winning chapter | award winning people"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/aboutButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:onClick="aboutMessage"/>
+
+            <Button
+                android:id="@+id/joinButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Join"
+                android:onClick="joinMessage"/>
+
+            <Button
+                android:id="@+id/officersButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Officers"
+                android:onClick="officersMessage"/>
+
+            <Button
+                android:id="@+id/socialMediaButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Social Media"
+                android:onClick="socialMediaMessage"/>
+
+            <Button
+                android:id="@+id/currentEventsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Events"
+                android:onClick="currentEventsMessage"/>
+
+            <Button
+                android:id="@+id/signUpButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Event Sign up"
+                android:onClick="signUpMessage"/>
+
+            <Button
+                android:id="@+id/attendenceButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="attendence"
+                android:onClick="attendenceMessage"/>
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
