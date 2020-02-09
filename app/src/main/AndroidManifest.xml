@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/app_icon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CurrentEvents"></activity>
+        <activity android:name=".JoinForm"></activity>
+        <activity android:name=".CurrentEvents" />
         <activity android:name=".ViewAttendance" />
         <activity android:name=".AddAttendance" />
         <activity android:name=".AboutUs" />

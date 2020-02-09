@@ -13,7 +13,8 @@
         android:onClick="aboutUs"/>
     <item
         android:id="@+id/joinButton"
-        android:title="@string/joinUs"/>
+        android:title="@string/joinUs"
+        android:onClick="joinFormPage"/>
     <item
         android:id="@+id/officers"
         android:title="@string/officers"
@@ -24,7 +25,8 @@
         android:title="@string/social" />
     <item
         android:id="@+id/currentEvent"
-        android:title="@string/currentEvent"/>
+        android:title="@string/currentEvent"
+        android:onClick="currentEventsPage"/>
     <item
         android:id="@+id/eventSignup"
         android:title="@string/eventSignup"/>

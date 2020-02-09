@@ -1,6 +1,7 @@
 package com.example.fblaapp;
 
 import android.content.Intent;
+import android.graphics.Paint;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
@@ -57,6 +58,12 @@ public class SocialMediaLinks extends AppCompatActivity {
 
     public boolean currentEventsPage(MenuItem item) {
         Intent intent = new Intent(this, CurrentEvents.class);
+        startActivity(intent);
+        return true;
+    }
+
+    public boolean joinFormPage(MenuItem item) {
+        Intent intent = new Intent(this, Paint.Join.class);
         startActivity(intent);
         return true;
     }
