@@ -11,7 +11,7 @@ Date:02/8/2019
 
 ## Installation
 
-1. Download the .apk file to your computer. 
+1. Download the .apk file in the releases folder to your computer
 2. Connect your android phone to your computer
 3. Copy the .apk file from your computer to the phone
 4. Disconnect the phone from the computer
