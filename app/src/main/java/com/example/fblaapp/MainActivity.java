@@ -10,7 +10,6 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-
     public boolean socialMediaLinks(MenuItem item) {
         Intent intent = new Intent(this, SocialMediaLinks.class);
         startActivity(intent);
