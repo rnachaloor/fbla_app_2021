@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/app_icon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EventFormSubmitted"></activity>
+        <activity android:name=".FrequentlyAskedQuestions"></activity>
+        <activity android:name=".EventFormSubmitted" />
         <activity android:name=".CurrentEventForm" />
         <activity android:name=".JoinFormFinish" />
         <activity android:name=".JoinForm" />

@@ -51,6 +51,13 @@ public class AddAttendance extends AppCompatActivity {
         return true;
     }
 
+    public boolean freqentlyAskedQuestionsPage(MenuItem item) {
+        Intent intent = new Intent(this, FrequentlyAskedQuestions.class);
+        startActivity(intent);
+        return true;
+    }
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

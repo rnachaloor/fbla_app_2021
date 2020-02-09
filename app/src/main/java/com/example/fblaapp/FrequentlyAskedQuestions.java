@@ -9,7 +9,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class FrequentlyAskedQuestions extends AppCompatActivity {
 
     public boolean socialMediaLinks(MenuItem item) {
         Intent intent = new Intent(this, SocialMediaLinks.class);
@@ -101,23 +101,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void attendanceMessage(View view)
+    public void attendenceMessage(View view)
     {
         Intent intent = new Intent(this, Attendance.class);
         startActivity(intent);
-    }
-
-    public void faqMessage(View view)
-    {
-        Intent intent = new Intent(this, FrequentlyAskedQuestions.class);
-        startActivity(intent);
-    }
-
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
     }
 
     @Override
@@ -127,7 +114,9 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-
-
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_frequently_asked_questions);
+    }
 }
-

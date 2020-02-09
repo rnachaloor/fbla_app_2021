@@ -35,4 +35,9 @@
         android:id="@+id/attendence"
         android:title="Attendence Data"
         android:onClick="attendancePage"/>
+    <item
+        android:id="@+id/faq"
+        android:title="FAQ"
+        android:onClick="freqentlyAskedQuestionsPage"
+        />
 </menu>

@@ -21,4 +21,10 @@
     <string name="immerText">
         Johns Creek FBLA takes what students learn and making it a reality by taking them on field trips and more about business.
     </string>
+    <string name="ansQuestion5">
+        The Business Achievement Awards (BAA’s) is a program that enriches students’ leadership skills. The four levels are Future, Business, Leader, and America. Students can go through the levels by focusing on activities.
+    </string>
+    <string name="ansQuestion8">
+        The Career and Membership Achievement Program (CMAP) is a program where students can develop their job skills. The three levels of CMAP are Directive, Executive, and President.
+    </string>
 </resources>
