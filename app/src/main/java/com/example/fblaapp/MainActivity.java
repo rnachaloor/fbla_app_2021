@@ -113,6 +113,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void tocMessage(View view) {
+        Intent intent = new Intent(this, TermsAndConditions.class);
+        startActivity(intent);
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
