@@ -22,8 +22,29 @@
         android:layout_height="wrap_content"
         android:textSize="32dp"
         android:text="Do You Want to Enter Attendance Data"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:onClick="addData"
+        android:clickable="true"
+        android:cursorVisible="true"
         app:layout_constraintBottom_toTopOf="@+id/divider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/viewDataText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do You Want to View Attendance Data"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="32dp"
+        android:onClick="viewData"
+        android:clickable="true"
+        android:cursorVisible="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/divider" />0
 </androidx.constraintlayout.widget.ConstraintLayout>

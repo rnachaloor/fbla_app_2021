@@ -1,15 +1,17 @@
 package com.example.fblaapp;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
+import android.widget.TextView;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Attendance extends AppCompatActivity {
+public class ViewAttendance extends AppCompatActivity {
 
     public boolean socialMediaLinks(MenuItem item) {
         Intent intent = new Intent(this, SocialMediaLinks.class);
@@ -41,22 +43,26 @@ public class Attendance extends AppCompatActivity {
         return true;
     }
 
-    public boolean addData(View view) {
-        Intent intent = new Intent(this, AddAttendance.class);
-        startActivity(intent);
-        return true;
-    }
-
-    public boolean viewData(View view) {
-        Intent intent = new Intent(this, ViewAttendance.class);
-        startActivity(intent);
-        return true;
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_attendance);
+        setContentView(R.layout.activity_view_attendance);
+
+        Cursor res = AddAttendance.myDb.getAllData();
+        if(res.getCount() == 0) {
+            showError("Error", "Sorry there is Nothing found");
+        }
+
+        StringBuffer buffer = new StringBuffer();
+        while (res.moveToNext()) {
+            buffer.append("Name: "+res.getString(0)+"\n");
+            buffer.append("Attendance: "+res.getString(1)+"\n\n");
+        }
+
+        TextView results = (TextView) findViewById(R.id.resultsAttendance);
+        String resText = buffer.toString();
+        results.setText(resText);
+
     }
 
     @Override
@@ -64,5 +70,13 @@ public class Attendance extends AppCompatActivity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main_menu, menu);
         return true;
+    }
+
+    public void showError(String title, String message) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setCancelable(true);
+        builder.setTitle(title);
+        builder.setMessage(message);
+        builder.show();
     }
 }
