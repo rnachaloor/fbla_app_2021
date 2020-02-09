@@ -97,8 +97,21 @@
                 android:id="@+id/attendenceButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="attendence"
-                android:onClick="attendenceMessage"/>
+                android:text="attendance"
+                android:onClick="attendanceMessage"/>
+
+            <Button
+                android:id="@+id/faqButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FAQ"
+                android:onClick="faqMessage"/>
+            <Button
+                android:id="@+id/tocButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Terms and Conditions"
+                android:onClick="tocMessage"/>
 
         </LinearLayout>
     </ScrollView>

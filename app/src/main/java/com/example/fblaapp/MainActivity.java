@@ -1,7 +1,6 @@
 package com.example.fblaapp;
 
 import android.content.Intent;
-import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -54,6 +53,12 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    public boolean freqentlyAskedQuestionsPage(MenuItem item) {
+        Intent intent = new Intent(this, FrequentlyAskedQuestions.class);
+        startActivity(intent);
+        return true;
+    }
+
     public boolean currentEventSignupPage(MenuItem item) {
         Intent intent = new Intent(this, CurrentEventForm.class);
         startActivity(intent);
@@ -96,9 +101,20 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void attendenceMessage(View view)
+    public void attendanceMessage(View view)
     {
         Intent intent = new Intent(this, Attendance.class);
+        startActivity(intent);
+    }
+
+    public void faqMessage(View view)
+    {
+        Intent intent = new Intent(this, FrequentlyAskedQuestions.class);
+        startActivity(intent);
+    }
+
+    public void tocMessage(View view) {
+        Intent intent = new Intent(this, TermsAndConditions.class);
         startActivity(intent);
     }
 

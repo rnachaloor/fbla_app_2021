@@ -45,11 +45,30 @@ public class AddAttendance extends AppCompatActivity {
         return true;
     }
 
+    public boolean currentEventsPage(MenuItem item) {
+        Intent intent = new Intent(this, CurrentEvents.class);
+        startActivity(intent);
+        return true;
+    }
+
+    public boolean joinFormPage(MenuItem item) {
+        Intent intent = new Intent(this, JoinForm.class);
+        startActivity(intent);
+        return true;
+    }
+
+    public boolean freqentlyAskedQuestionsPage(MenuItem item) {
+        Intent intent = new Intent(this, FrequentlyAskedQuestions.class);
+        startActivity(intent);
+        return true;
+    }
+
     public boolean currentEventSignupPage(MenuItem item) {
         Intent intent = new Intent(this, CurrentEventForm.class);
         startActivity(intent);
         return true;
     }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,5 +95,10 @@ public class AddAttendance extends AppCompatActivity {
             Toast.makeText(AddAttendance.this, "Data Not Inserted", Toast.LENGTH_LONG).show();
         }
 
+    }
+
+    public void view(View view) {
+        Intent intent = new Intent(this, ViewAttendance.class);
+        startActivity(intent);
     }
 }

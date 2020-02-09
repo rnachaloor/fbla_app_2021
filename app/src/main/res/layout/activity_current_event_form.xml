@@ -7,20 +7,95 @@
     tools:context=".CurrentEventForm">
 
     <ScrollView
-        android:layout_width="409dp"
-        android:layout_height="601dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-63dp"
+        tools:layout_editor_absoluteY="-288dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/newUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Name:"
+                android:textColor="@android:color/black"
+                android:textSize="28dp" />
+
+            <EditText
+                android:id="@+id/userNameBox"
+                android:layout_width="304dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp" />
+            <TextView
+                android:id="@+id/eventNameTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Name of Event:"
+                android:textColor="@android:color/black"
+                android:textSize="28dp" />
+
+            <EditText
+                android:id="@+id/eventName"
+                android:layout_width="304dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/eventPurposeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="What Do You Want to do at This Event: "
+                android:textColor="@android:color/black"
+                android:textSize="28dp" />
+
+            <EditText
+                android:id="@+id/eventPurpose"
+                android:layout_width="304dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/emailAddressTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Email Address:"
+                android:textColor="@android:color/black"
+                android:textSize="28dp" />
+
+            <EditText
+                android:id="@+id/emailAddress"
+                android:layout_width="304dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp" />
+            
+
+            <Button
+                android:id="@+id/submitJoin"
+                android:layout_width="wrap_content"
+                android:layout_height="51dp"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="16dp"
+                android:text="Submit"
+                android:onClick="eventFormSubmit"/>
+        </LinearLayout>
+
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
