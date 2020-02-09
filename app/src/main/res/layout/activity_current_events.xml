@@ -38,12 +38,81 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ListView
-                android:id="@+id/simpleListView"
-                android:layout_width="fill_parent"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:divider="@color/material_blue_grey_800"
-                android:dividerHeight="1dp" />
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                android:text="1. Meeting 8/27"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                android:text="2. The Can Bowl 09/09 - 09/20"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                android:text="3. Meeting 9/19"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                android:text="4. Meeting 10/3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                android:text="5. T-Shirts 10/03"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                android:text="6. Fall Motivational Rally: Perry, GA - Date: 10/10"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                android:text="7. Fall Leadership Conference (FLC): Athens, GA - Dates: 11/13-11/14"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                android:text="8. Matchmaker 02/10 - 02/13"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                android:text="9. State Leadership Conference PreJudge Submission Due 02/09"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                android:text="10. State Leadership Conference 03/20-03/21"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                android:text="11. National Leadership Conference 06/28-07/02"/>
+
         </LinearLayout>
     </ScrollView>
 
