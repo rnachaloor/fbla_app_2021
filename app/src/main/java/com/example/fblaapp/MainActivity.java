@@ -203,6 +203,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
+     * opens fbla website using a button
+     * @param view the view that utilizes the function
+     */
+    public void pdfMessage(View view) {
+        Uri uri = Uri.parse("https://www.fbla-pbl.org/media/FBLA-EVENTS-AT-A-GLANCE-2019.pdf");
+        Intent browser = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(browser);
+    }
+
+    /**
      * code executes when form is submitted
      * @param view the view that utilizes the function
      */

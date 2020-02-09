@@ -115,6 +115,13 @@
                 android:onClick="urlFBLA" />
 
             <Button
+                android:id="@+id/eventsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FBLA Events"
+                android:onClick="pdfMessage" />
+
+            <Button
                 android:id="@+id/tocButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

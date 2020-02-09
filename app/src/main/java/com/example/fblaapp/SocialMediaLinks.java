@@ -136,7 +136,7 @@ public class SocialMediaLinks extends AppCompatActivity {
     }
 
     /**
-     * creates and allows the menu bar to open
+     * creates and allows the menu bar to open. also opens web view
      * @param menu the menu that you want to open
      * @return
      */
