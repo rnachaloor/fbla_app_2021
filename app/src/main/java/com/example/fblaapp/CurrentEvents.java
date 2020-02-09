@@ -1,7 +1,6 @@
 package com.example.fblaapp;
 
 import android.content.Intent;
-import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -48,7 +47,7 @@ public class CurrentEvents extends AppCompatActivity {
     }
 
     public boolean joinFormPage(MenuItem item) {
-        Intent intent = new Intent(this, Paint.Join.class);
+        Intent intent = new Intent(this, JoinForm.class);
         startActivity(intent);
         return true;
     }

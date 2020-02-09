@@ -1,7 +1,6 @@
 package com.example.fblaapp;
 
 import android.content.Intent;
-import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -10,9 +9,6 @@ import android.view.MenuItem;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-
-    private static void test(){
-    }
 
     public boolean socialMediaLinks(MenuItem item) {
         Intent intent = new Intent(this, SocialMediaLinks.class);
@@ -51,10 +47,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public boolean joinFormPage(MenuItem item) {
-        Intent intent = new Intent(this, Paint.Join.class);
+        Intent intent = new Intent(this, JoinForm.class);
         startActivity(intent);
         return true;
     }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

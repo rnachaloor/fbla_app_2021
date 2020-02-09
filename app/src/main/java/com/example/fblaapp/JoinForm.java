@@ -1,22 +1,19 @@
 package com.example.fblaapp;
 
 import android.content.Intent;
-import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.RadioButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class JoinForm extends AppCompatActivity {
 
-    public String userName = "";
-    public String gradClass = "";
-    public String shirtSize = "";
+    public static String userName = "";
+    public static String gradClass = "";
+    public static String shirtSize = "";
 
     public boolean socialMediaLinks(MenuItem item) {
         Intent intent = new Intent(this, SocialMediaLinks.class);
@@ -55,59 +52,14 @@ public class JoinForm extends AppCompatActivity {
     }
 
     public boolean joinFormPage(MenuItem item) {
-        Intent intent = new Intent(this, Paint.Join.class);
+        Intent intent = new Intent(this, JoinForm.class);
         startActivity(intent);
         return true;
     }
 
     public void joinFormSubmit(View view) {
-        final EditText nameBox = (EditText) findViewById(R.id.userNameBox);
-        userName = nameBox.toString();
-        boolean checked = ((RadioButton) view).isChecked();
-
-        switch(view.getId()) {
-            case R.id.freshmenOption:
-                if (checked) {
-                    gradClass = "Freshmen";
-                }
-                break;
-            case R.id.sophomoreOption:
-                if (checked) {
-                    gradClass = "Sophomore";
-                }
-                break;
-            case R.id.juniorOption:
-                if (checked) {
-                    gradClass = "Junior";
-                }
-                break;
-            case R.id.seniorOption:
-                if (checked) {
-                    gradClass = "Senior";
-                }
-                break;
-            case R.id.shirtSmall:
-                if (checked) {
-                    shirtSize = "Small";
-                }
-                break;
-            case R.id.shirtMedium:
-                if (checked) {
-                    shirtSize = "Medium";
-                }
-                break;
-            case R.id.shirtLarge:
-                if (checked) {
-                    shirtSize = "Large";
-                }
-                break;
-            case R.id.shirtExtraLarge:
-                if (checked) {
-                    shirtSize = "Extra Large";
-                }
-                break;
-
-        }
+        Intent intent = new Intent(this, JoinFormFinish.class);
+        startActivity(intent);
     }
 
     @Override
