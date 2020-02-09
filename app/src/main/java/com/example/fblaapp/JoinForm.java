@@ -6,10 +6,17 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.RadioButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class JoinForm extends AppCompatActivity {
+
+    public String userName = "";
+    public String gradClass = "";
+    public String shirtSize = "";
 
     public boolean socialMediaLinks(MenuItem item) {
         Intent intent = new Intent(this, SocialMediaLinks.class);
@@ -51,6 +58,56 @@ public class JoinForm extends AppCompatActivity {
         Intent intent = new Intent(this, Paint.Join.class);
         startActivity(intent);
         return true;
+    }
+
+    public void joinFormSubmit(View view) {
+        final EditText nameBox = (EditText) findViewById(R.id.userNameBox);
+        userName = nameBox.toString();
+        boolean checked = ((RadioButton) view).isChecked();
+
+        switch(view.getId()) {
+            case R.id.freshmenOption:
+                if (checked) {
+                    gradClass = "Freshmen";
+                }
+                break;
+            case R.id.sophomoreOption:
+                if (checked) {
+                    gradClass = "Sophomore";
+                }
+                break;
+            case R.id.juniorOption:
+                if (checked) {
+                    gradClass = "Junior";
+                }
+                break;
+            case R.id.seniorOption:
+                if (checked) {
+                    gradClass = "Senior";
+                }
+                break;
+            case R.id.shirtSmall:
+                if (checked) {
+                    shirtSize = "Small";
+                }
+                break;
+            case R.id.shirtMedium:
+                if (checked) {
+                    shirtSize = "Medium";
+                }
+                break;
+            case R.id.shirtLarge:
+                if (checked) {
+                    shirtSize = "Large";
+                }
+                break;
+            case R.id.shirtExtraLarge:
+                if (checked) {
+                    shirtSize = "Extra Large";
+                }
+                break;
+
+        }
     }
 
     @Override
