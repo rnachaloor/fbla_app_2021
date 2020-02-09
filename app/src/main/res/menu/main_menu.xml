@@ -28,4 +28,7 @@
     <item
         android:id="@+id/eventSignup"
         android:title="@string/eventSignup"/>
+    <item
+        android:id="@+id/attendence"
+        android:title="Attendance Data"s/>
 </menu>
