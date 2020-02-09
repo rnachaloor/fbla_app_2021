@@ -106,6 +106,14 @@
                 android:layout_height="wrap_content"
                 android:text="FAQ"
                 android:onClick="faqMessage"/>
+
+            <Button
+                android:id="@+id/webButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click here to go to the JCHS FBLA Website"
+                android:onClick="urlFBLA" />
+
             <Button
                 android:id="@+id/tocButton"
                 android:layout_width="match_parent"
@@ -113,6 +121,61 @@
                 android:text="Terms and Conditions"
                 android:onClick="tocMessage"/>
 
+            <TextView
+                android:id="@+id/messageUs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Message Us"
+                android:textColor="@android:color/black"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/newUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Name:"
+                android:textColor="@android:color/black"
+                android:textSize="28dp" />
+
+            <EditText
+                android:id="@+id/userNameBox"
+                android:layout_width="304dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Message:"
+                android:textColor="@android:color/black"
+                android:textSize="28dp" />
+
+            <EditText
+                android:id="@+id/messageBox"
+                android:layout_width="304dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="51dp"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="16dp"
+                android:text="Submit"
+                android:onClick="submitNow"/>
         </LinearLayout>
+
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

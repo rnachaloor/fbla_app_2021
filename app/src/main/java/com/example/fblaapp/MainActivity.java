@@ -1,12 +1,16 @@
 package com.example.fblaapp;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -117,11 +121,27 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void submitNow(View view) {
+        EditText editText = findViewById(R.id.userNameBox);
+        EditText editText1 = findViewById(R.id.messageBox);
+        editText.setText("");
+        editText1.setText("");
+        Toast.makeText(this, "Thanks For Submitting", Toast.LENGTH_SHORT).show();
+    }
+
+    public void urlFBLA(View view) {
+        Uri uri = Uri.parse("https://jchsfbla.org");
+        Intent browser = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(browser);
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("FBLA of JCHS");
     }
 
     @Override
