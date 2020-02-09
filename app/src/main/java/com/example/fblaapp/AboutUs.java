@@ -39,6 +39,13 @@ public class AboutUs extends AppCompatActivity {
         startActivity(intent);
         return true;
     }
+    
+    public boolean currentEventsPage(MenuItem item) {
+        Intent intent = new Intent(this, CurrentEvents.class);
+        startActivity(intent);
+        return true;
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
