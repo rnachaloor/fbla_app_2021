@@ -5,10 +5,15 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class AboutUs extends AppCompatActivity {
+public class AddAttendance extends AppCompatActivity {
+
+    public static DatabaseHelper myDb;
 
     public boolean socialMediaLinks(MenuItem item) {
         Intent intent = new Intent(this, SocialMediaLinks.class);
@@ -43,7 +48,8 @@ public class AboutUs extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about_us);
+        setContentView(R.layout.activity_add_attendance);
+        myDb = new DatabaseHelper(this);
     }
 
     @Override
@@ -51,5 +57,18 @@ public class AboutUs extends AppCompatActivity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main_menu, menu);
         return true;
+    }
+
+    public void submit(View view) {
+        EditText name = (EditText) findViewById(R.id.eventNameBox);
+        EditText attend = (EditText) findViewById(R.id.attendanceAmount);
+        boolean isInserted = myDb.insertData(name.getText().toString(), attend.getText().toString());
+        if(isInserted) {
+            Toast.makeText(AddAttendance.this, "Data Inserted", Toast.LENGTH_LONG).show();
+        }
+        else{
+            Toast.makeText(AddAttendance.this, "Data Not Inserted", Toast.LENGTH_LONG).show();
+        }
+
     }
 }

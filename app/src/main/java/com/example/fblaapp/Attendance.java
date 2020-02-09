@@ -5,10 +5,11 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class AboutUs extends AppCompatActivity {
+public class Attendance extends AppCompatActivity {
 
     public boolean socialMediaLinks(MenuItem item) {
         Intent intent = new Intent(this, SocialMediaLinks.class);
@@ -40,10 +41,22 @@ public class AboutUs extends AppCompatActivity {
         return true;
     }
 
+    public boolean addData(View view) {
+        Intent intent = new Intent(this, AddAttendance.class);
+        startActivity(intent);
+        return true;
+    }
+
+    public boolean viewData(View view) {
+        Intent intent = new Intent(this, ViewAttendance.class);
+        startActivity(intent);
+        return true;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about_us);
+        setContentView(R.layout.activity_attendance);
     }
 
     @Override
