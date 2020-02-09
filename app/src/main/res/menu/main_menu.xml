@@ -29,7 +29,8 @@
         android:onClick="currentEventsPage"/>
     <item
         android:id="@+id/eventSignup"
-        android:title="@string/eventSignup"/>
+        android:title="@string/eventSignup"
+        android:onClick="currentEventSignupPage"/>
     <item
         android:id="@+id/attendence"
         android:title="Attendence Data"

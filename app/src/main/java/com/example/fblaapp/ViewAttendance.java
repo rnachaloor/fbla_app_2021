@@ -43,6 +43,12 @@ public class ViewAttendance extends AppCompatActivity {
         return true;
     }
 
+    public boolean currentEventSignupPage(MenuItem item) {
+        Intent intent = new Intent(this, CurrentEventForm.class);
+        startActivity(intent);
+        return true;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

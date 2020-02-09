@@ -62,6 +62,12 @@ public class JoinForm extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public boolean currentEventSignupPage(MenuItem item) {
+        Intent intent = new Intent(this, CurrentEventForm.class);
+        startActivity(intent);
+        return true;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
