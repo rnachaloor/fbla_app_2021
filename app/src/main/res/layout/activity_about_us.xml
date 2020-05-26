@@ -85,7 +85,7 @@
                 android:id="@+id/communityText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/communText"
+                android:text="@string/commonText"
                 android:textAlignment="center"
                 android:textSize="20dp" />
 
@@ -102,7 +102,7 @@
                 android:id="@+id/immersionText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/communText"
+                android:text="@string/commonText"
                 android:textAlignment="center"
                 android:textSize="20dp" />
         </LinearLayout>
