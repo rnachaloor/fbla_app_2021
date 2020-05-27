@@ -126,10 +126,10 @@ public class ViewAttendance extends AppCompatActivity {
             showError("Error", "Sorry there is Nothing found");
         }
 
-        StringBuffer buffer = new StringBuffer();
+        StringBuilder buffer = new StringBuilder();
         while (res.moveToNext()) {
-            buffer.append("Name: "+res.getString(0)+"\n");
-            buffer.append("Attendance: "+res.getString(1)+"\n\n");
+            buffer.append("Name: ").append(res.getString(0)).append("\n");
+            buffer.append("Attendance: ").append(res.getString(1)).append("\n\n");
         }
 
         TextView results = (TextView) findViewById(R.id.resultsAttendance);

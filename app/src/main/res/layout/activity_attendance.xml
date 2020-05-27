@@ -16,6 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- TextView is used as a button for the user to enter attendance data-->
     <TextView
         android:id="@+id/enterDataText"
         android:layout_width="wrap_content"
@@ -32,6 +33,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- TextView is used as a button for the user to view their attendance data-->
     <TextView
         android:id="@+id/viewDataText"
         android:layout_width="wrap_content"
